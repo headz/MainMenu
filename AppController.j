@@ -16,8 +16,6 @@
 
 - (void)applicationDidFinishLaunching:(CPNotification)aNotification
 {
-
-    CPLog.debug(@"%s %s self :  %@",[self class],_cmd,self);
     // Uncomment the following line to turn on the standard menu bar.
     //[CPMenu setMenuBarVisible:YES];
 }
@@ -30,7 +28,6 @@
     // It's a useful hook for setting up current UI values, and other things. 
     
     // In this case, we want the window from Cib to become our full browser window
-    CPLog.debug(@"%s %s  theWindow :  %@",[self class],_cmd, theWindow);
     [theWindow setFullBridge:YES];
 }
 @end
